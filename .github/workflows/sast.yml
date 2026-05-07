@@ -23,5 +23,5 @@ jobs:
           FOD_URL: ${{ vars.FOD_URL }}
           FOD_CLIENT_ID: ${{ secrets.FOD_CLIENT_ID }}
           FOD_CLIENT_SECRET: ${{ secrets.FOD_CLIENT_SECRET }}
-          # FOD_RELEASE: MyApp:main        # Optional: defaults to repo:branch
+          FOD_RELEASE: ${{ vars.FOD_RELEASE }}
           # FCLI_BOOTSTRAP_VERSION: v3.15  # Optional if you prefer stability over latest
