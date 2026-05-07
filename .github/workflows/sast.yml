@@ -32,9 +32,12 @@ jobs:
         
       - name: Build application
         run: dotnet build --configuration Release --no-restore
-        
-      - uses: fortify/github-action@v3
-        name: Run Fortify Scan
+
+      - name: Verify artifacts
+        run: find . -name "*.dll"
+
+      - name: Run Fortify Scan
+        uses: fortify/github-action@v3
         env:
           FOD_URL: ${{ vars.FOD_URL }}
           FOD_CLIENT_ID: ${{ secrets.FOD_CLIENT_ID }}
