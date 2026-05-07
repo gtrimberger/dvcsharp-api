@@ -46,6 +46,6 @@ jobs:
           # FCLI_BOOTSTRAP_VERSION: v3.15  # Optional if you prefer stability over latest
           PACKAGE_EXTRA_OPTS: -bf ./dvcsharp-core-api.csproj
           # PACKAGE_EXTRA_OPTS: -bt dotnet            # Extra 'scancentral package' options
-          DO_WAIT: true                                  # Wait for successful scan completion (implied if post-scan actions enabled)
-          DO_EXPORT: true                                # Export vulnerability data to GitHub code scanning dashboard
-          EXPORT_EXTRA_OPTS: --on-unsigned=ignore        # Pass extra options to export action
+          # DO_WAIT: true                                  # Wait for successful scan completion (implied if post-scan actions enabled)
+          # DO_EXPORT: true                                # Export vulnerability data to GitHub code scanning dashboard
+          # EXPORT_EXTRA_OPTS: --on-unsigned=ignore        # Pass extra options to export action
