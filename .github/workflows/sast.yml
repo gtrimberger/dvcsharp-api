@@ -1,5 +1,6 @@
 name: OpenText Core Application Security (Fortify on Demand) Scan
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
