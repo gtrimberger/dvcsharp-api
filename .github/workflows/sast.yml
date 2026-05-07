@@ -44,3 +44,4 @@ jobs:
           FOD_CLIENT_SECRET: ${{ secrets.FOD_CLIENT_SECRET }}
           FOD_RELEASE: ${{ vars.FOD_RELEASE }}
           # FCLI_BOOTSTRAP_VERSION: v3.15  # Optional if you prefer stability over latest
+          PACKAGE_EXTRA_OPTS: -bt dotnet            # Extra 'scancentral package' options
