@@ -28,10 +28,10 @@ jobs:
           dotnet-version: '8.0.x'
           
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./dvcsharp-core-api.csproj
         
       - name: Build application
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build ./dvcsharp-core-api.csproj --configuration Release --no-restore
 
       - name: Verify artifacts
         run: find . -name "*.dll"
